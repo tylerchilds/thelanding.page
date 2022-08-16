@@ -4,6 +4,14 @@
 	font-weight: 200 800;
 }
 
+@font-face {
+  font-family: 'Recursive';
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url('/fonts/Recursive_VF_1.085--subset-GF_latin_basic.woff2') format('woff2');
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -163,10 +171,16 @@
 	--color-neutral-shade4: hsl(170, 10%, 2%);
 	--focus-outline: 4rem dotted var(--color-primary-tint1);
 	--focus-outline-offset: 4rem;
-	--font-family: 'Sono', 'Avenir', 'Avenir Next', 'Helvetica Neue', 'Segoe UI', 'Verdana', sans-serif;
+	--font-family: 'Recursive', 'Avenir', 'Avenir Next', 'Helvetica Neue', 'Segoe UI', 'Verdana', sans-serif;
 	--font-mono: 'Consolas', 'Monaco', 'Courier New', monospace;
 	--font-heading: var(--font-family);
 	--font-body: var(--font-family);
+
+  --v-font-mono: 0.45;
+  --v-font-casl: 0;
+  --v-font-wght: 545;
+  --v-font-slnt: 0;
+  --v-font-crsv: 0.5;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -185,7 +199,13 @@ html {
 html,
 body {
 	box-sizing: border-box;
-	font-family: 'Sono';
+	font-family: 'Recursive';
+  font-variation-settings:
+    "MONO" var(--v-font-mono),
+    "CASL" var(--v-font-casl),
+    "wght" var(--v-font-wght),
+    "slnt" var(--v-font-slnt),
+    "CRSV" var(--v-font-crsv);
 	height: 100%;
 }
 
@@ -322,7 +342,9 @@ a:active {
 }
 
 img,
-video {
+video,
+svg{
+  height: auto;
 	max-width: 100%;
 	vertical-align: top;
 }

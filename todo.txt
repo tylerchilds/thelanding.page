@@ -1,0 +1,10 @@
+
+[ ] - Trace single line kit items
+[ ] - Manually tweak svgs and set pathlength = 1
+[ ] - Bring in recursive design font
+[ ] - Port in scrolling animation lib
+[ ] - Animate lines!
+
+template:
+
+[ ] -
