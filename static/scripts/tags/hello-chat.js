@@ -85,7 +85,7 @@ function renderMessages($) {
 }
 
 function listen(replicache) {
-	const ws = new WebSocket(`ws://${window.location.host}/poke`);
+	const ws = new WebSocket(`wss://${window.location.host}/poke`);
 
 	ws.onopen = () => {
 		console.log({ ws })
