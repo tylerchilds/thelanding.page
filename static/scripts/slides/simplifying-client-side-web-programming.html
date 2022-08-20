@@ -8,9 +8,24 @@
         <link href="/scripts/slides/main.css" rel="stylesheet">
         <link href="/scripts/slides/slideshow.css" rel="stylesheet">
         <link href="/scripts/slides/prism.css" rel="stylesheet">
+<style>
+  .connect {
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 100%;
+    background: transparent;
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 100;
+  }
+</style>
     </head>
     <body>
-        <button class="connect">Connect</button>
+        <button class="connect"> Hi </button>
         <main id="main">
             <section class="content content--title">
               <h1 class="content__heading">
@@ -186,10 +201,12 @@
               </h1>
             </section>
 
-            <section class="content content--title">
-              <h1 class="content__heading">
-                Live Demo
-              </h1>
+            <section class="content">
+              <hello-chat>
+                Loading...
+              </hello-chat>
+              <script type="module" src="/scripts/tags/hello-chat.js"></script>
+
             </section>
 
             <section class="content content--title">
